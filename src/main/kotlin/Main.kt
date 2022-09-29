@@ -2,10 +2,12 @@ import org.apache.kafka.common.serialization.Serdes
 import org.apache.kafka.streams.StreamsConfig
 import java.util.Properties
 
-val examples = mutableMapOf("ex1" to ::ex1)
+val examples = mutableMapOf(
+    "ex1" to ::ex1, "ex2" to ::ex2
+)
 
 fun main() {
-    examples["ex1"]!!()
+    examples["ex2"]!!()
 }
 
 fun streamsConfig(appId: String): StreamsConfig {
