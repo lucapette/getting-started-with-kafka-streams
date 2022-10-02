@@ -10,7 +10,7 @@ fun ex2() {
         .stream<String, String>("tweets")
         .filter { _, v -> extractor.extractMentionedScreennames(v).isEmpty() }
         .mapValues { tweet -> tweet.uppercase() }
-        .to("tweets.shouting")
+        .to("tweets.no-mentions.shouting")
 
     val kafkaStreams = KafkaStreams(streamsBuilder.build(), streamsConfig("ex2"))
 
