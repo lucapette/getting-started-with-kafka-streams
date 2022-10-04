@@ -7,9 +7,10 @@ fun main() {
     val examples = mutableMapOf(
         "ex1" to ::ex1,
         "ex2" to ::ex2,
-        "ex4" to ::ex4
+        "ex4" to ::ex4,
+        "ex5" to ::ex5,
     )
-    examples["ex4"]!!()
+    examples["ex5"]!!()
 }
 
 fun streamsConfig(appId: String): StreamsConfig {
