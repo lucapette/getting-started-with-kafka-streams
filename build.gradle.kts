@@ -13,9 +13,9 @@ repositories {
 
 dependencies {
     testImplementation(kotlin("test"))
-    implementation("org.apache.kafka:kafka-streams:3.2.3")
-    implementation("org.slf4j:slf4j-simple:2.0.1")
-    implementation("org.slf4j:slf4j-api:2.0.1")
+    implementation("org.apache.kafka:kafka-streams:3.3.1")
+    implementation("org.slf4j:slf4j-simple:2.0.3")
+    implementation("org.slf4j:slf4j-api:2.0.3")
     implementation("com.twitter:twitter-text:1.14.7")
 
 }
